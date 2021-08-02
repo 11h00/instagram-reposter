@@ -7,7 +7,11 @@
      * 
      */
     class mains_functions{
-
+        protected $UserAgent = [
+            "",
+            ""
+        ];
+        
         protected function TestIgFeed() : int{
             $feed = curl_init("https://i.instagram.com/api/v1/feed/reels_tray/");
             curl_setopt_array($feed, [
@@ -21,7 +25,7 @@
                 ]
             ]);
             curl_exec($feed);
-            return 
+            return curl_getinfo($feed)["http_code"];
         }
 
         /**
@@ -56,6 +60,7 @@
                 return false;
             }
         }
+
     }
     
 

@@ -61,7 +61,7 @@ class utiles extends mains_functions{
      * 
      * @return string
      * 
-     * @throws NoAgentException
+     * @throws Exception
      * 
      * @see parent::USERAGENT
      */
@@ -70,7 +70,7 @@ class utiles extends mains_functions{
       if (count(parent::USERAGENT) > 0){
 
       }else{
-        throw "NoAgentException";
+        throw new Exception("No user agents");
       }
     }
 }
