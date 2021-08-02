@@ -42,6 +42,8 @@ class utiles extends mains_functions{
      * will be used to parset the sessions and other gaven cookies from instagram.
      * 
      * @return array the assosiative array containing returned cookies
+     * 
+     * @param string headers to parse
      */
     public function parseheader($headeur){
         preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $headeur, $matches);
