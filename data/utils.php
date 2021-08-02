@@ -67,7 +67,11 @@ class utiles extends mains_functions{
      */
 
     static function GetUserAgent(){
+      if (count(parent::USERAGENT) > 0){
 
+      }else{
+        throw "NoAgentException";
+      }
     }
 }
 
