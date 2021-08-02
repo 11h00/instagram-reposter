@@ -63,7 +63,7 @@ class utiles extends mains_functions{
      * 
      * @throws NoAgentException
      * 
-     * @see constants::useragent
+     * @see parent::USERAGENT
      */
 
     static function GetUserAgent(){

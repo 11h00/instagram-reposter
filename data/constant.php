@@ -11,6 +11,6 @@
         const TYPE_FEED_INT = 1;
         const TYPE_IGTV_INT = 8;
 
-        const USERAGENT = "";
+        const USERAGENT = [""];
     }
 ?>
