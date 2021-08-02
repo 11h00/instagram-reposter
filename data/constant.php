@@ -1,10 +1,13 @@
 <?php
     class constants extends mains_functions{
-        const PUBLIC_API = "";
-        const PRIVATE_API = "";
+        const API_VERSION = 1;
+        const PUBLIC_API = "https://www.instagram.com/";
+        const PRIVATE_API = "https://i.instagram.com/api/v1/";
 
-        CONST TYPE_ALBUM_INT = 8;
-        CONST TYPE_FEED_INT = 1;
-        CONST TYPE_IGTV_INT = 8;
+        const TYPE_ALBUM_INT = 8;
+        const TYPE_FEED_INT = 1;
+        const TYPE_IGTV_INT = 8;
+
+        const USERAGENT = "";
     }
 ?>
