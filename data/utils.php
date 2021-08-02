@@ -18,7 +18,9 @@ class utiles extends mains_functions{
      * 
      * generate a random string from $charactersLength
      * 
-     * @param int 
+     * @return string the generated string
+     * 
+     * @param int the lenght of the string to generate
      */
     public function GenerateRandomString(int $length) : string{
       $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
