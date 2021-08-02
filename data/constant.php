@@ -1,5 +1,5 @@
 <?php
-    class constants extends mains_functions{
+    abstract class constants extends mains_functions{
         const API_VERSION = 1;
 
         const JSON_PARAM = "?__a=1";

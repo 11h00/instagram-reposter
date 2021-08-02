@@ -54,6 +54,21 @@ class utiles extends mains_functions{
         }
         return $cookies;
     }
+    /**
+     * GetUserAgent
+     * 
+     * get a user agent from a list of random device
+     * 
+     * @return string
+     * 
+     * @throws NoAgentException
+     * 
+     * @see constants::useragent
+     */
+
+    static function GetUserAgent(){
+
+    }
 }
 
 ?>
