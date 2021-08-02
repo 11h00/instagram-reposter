@@ -1,9 +1,17 @@
 <?php
-    function generateUUID($keepDashes = true) {
+
+class utiles extends mains_functions{
+    /**
+     * 
+     */
+    public function generateUUID($keepDashes = true) {
 		$uuid = sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x', mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0x0fff) | 0x4000, mt_rand(0, 0x3fff) | 0x8000, mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff));
 		return $keepDashes ? $uuid : str_replace('-', '', $uuid);
     }
-    function femerla($length) {
+    /**
+     *
+     */
+    public function femerla($length) {
 		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		$charactersLength = strlen($characters);
 		$randomString = '';
@@ -12,7 +20,10 @@
 		}
 		return $randomString;
     }
-    function parseheader($headeur){
+    /**
+     * 
+     */
+    public function parseheader($headeur){
         preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $headeur, $matches);
         $cookies = array();
         foreach($matches[1] as $item) {
@@ -21,5 +32,6 @@
         }
         return $cookies;
     }
+}
 
 ?>
