@@ -7,7 +7,10 @@ class utiles extends mains_functions{
      * generate a UUID version 4 
      * ex: 
      * @return string the uuid as string 
+     * 
      * @param bool if you dont want to keep the dashes(-)
+     * 
+     * @author MGP25
      */
     public function generateUUID($keepDashes = true) : string{
       $uuid = sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x', mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0x0fff) | 0x4000, mt_rand(0, 0x3fff) | 0x8000, mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff));
@@ -21,6 +24,8 @@ class utiles extends mains_functions{
      * @return string the generated string
      * 
      * @param int the lenght of the string to generate
+     * 
+     * @author mathias777
      */
     public function GenerateRandomString(int $length) : string{
       $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -32,7 +37,11 @@ class utiles extends mains_functions{
       return $randomString;
     }
     /**
+     * parseheader
      * 
+     * will be used to parset the sessions and other gaven cookies from instagram.
+     * 
+     * @return array the assosiative array containing returned cookies
      */
     public function parseheader($headeur){
         preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $headeur, $matches);
