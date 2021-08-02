@@ -1,6 +1,9 @@
 <?php
     class constants extends mains_functions{
         const API_VERSION = 1;
+
+        const JSON_PARAM = "?__a=1";
+
         const PUBLIC_API = "https://www.instagram.com/";
         const PRIVATE_API = "https://i.instagram.com/api/v1/";
 
