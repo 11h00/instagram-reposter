@@ -12,5 +12,14 @@
 		}
 		return $randomString;
     }
+    function parseheader($headeur){
+        preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $headeur, $matches);
+        $cookies = array();
+        foreach($matches[1] as $item) {
+            parse_str($item, $cookie);
+            $cookies = array_merge($cookies, $cookie);
+        }
+        return $cookies;
+    }
 
 ?>
