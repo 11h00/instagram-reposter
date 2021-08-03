@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(3deg, #f9906e, #e10ee1);
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
 }
