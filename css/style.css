@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 #userbar {
   width: 90%;
   margin: auto;
@@ -15,14 +19,19 @@ body {
   align-items: center;
   padding: 0;
 }
-#userbar ul li {
+#userbar ul div {
   text-align: center;
   color: white;
-  line-height: 1;
+  line-height: 2;
   margin: 0;
 }
-#userbar {
-  background-color: rgba(0, 0, 0, 0.6);
+#userbar ul :nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#userbar ul :nth-child(2) li {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,8 +5,11 @@ body{
     margin: 0;
     padding: 0;
 }
-
+header{
+    background-color: rgba($color: #000000, $alpha: .6);
+}
 #userbar{
+    
     width: 90%;
     margin: auto;
     ul{
@@ -15,14 +18,19 @@ body{
         justify-content: space-between;
         align-items: center;
         padding: 0;
-        li{
+        div{
             text-align: center;
             color: white;
-            line-height: 1;
+            line-height: 2;
             margin: 0;
         }
-    }
-    &{
-        background-color: rgba($color: #000000, $alpha: .6);
+        :nth-child(2){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                margin: 10px;
+            }
+        }
     }
 }
