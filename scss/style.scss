@@ -21,6 +21,10 @@ header{
         padding: 0;
         margin: 0;
         div{
+            .useraction:hover{
+                color: gainsboro;
+                cursor: pointer;
+            }
             text-align: center;
             color: white;
             line-height: 2;

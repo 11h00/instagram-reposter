@@ -27,6 +27,10 @@ header {
   line-height: 2;
   margin: 0;
 }
+#userbar ul div .useraction:hover {
+  color: gainsboro;
+  cursor: pointer;
+}
 #userbar ul div li {
   font-size: min(4vw, 30px);
 }
