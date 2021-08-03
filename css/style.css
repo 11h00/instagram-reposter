@@ -27,6 +27,9 @@ header {
   line-height: 2;
   margin: 0;
 }
+#userbar ul div li {
+  font-size: min(4vw, 30px);
+}
 #userbar ul :nth-child(2) {
   display: flex;
   justify-content: space-between;
