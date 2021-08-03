@@ -28,7 +28,7 @@ header {
   margin: 0;
 }
 #userbar ul div .useraction:hover {
-  color: gainsboro;
+  color: #7a7a7a;
   cursor: pointer;
 }
 #userbar ul div li {
