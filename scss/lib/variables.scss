@@ -1,3 +1,7 @@
-$text_color: #000;
-$main_btn_color: #3988ff;
-$background: linear-gradient(3deg, rgb(249, 144, 110),rgb(225, 14, 225));
+//general
+    $text_color: #000;
+    $main_btn_color: #3988ff;
+    $background: linear-gradient(3deg, rgb(249, 144, 110),rgb(225, 14, 225));
+
+//navbar
+    $navbar_text: min(2vh, 30px);
