@@ -5,6 +5,24 @@ body{
     margin: 0;
     padding: 0;
 }
-header{
 
+#userbar{
+    width: 90%;
+    margin: auto;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        li{
+            text-align: center;
+            color: white;
+            line-height: 1;
+            margin: 0;
+        }
+    }
+    &{
+        background-color: rgba($color: #000000, $alpha: .6);
+    }
 }
